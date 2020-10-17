@@ -1,0 +1,50 @@
+#数据源配置
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #postgreSql数据源配置
+    logpgdatasource:
+      platform: postgres
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: 123456
+      driver-class-name: org.postgresql.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+    #mysql数据源配置
+    mysqldatasource:
+      url: jdbc:mysql://localhost:3306/boke?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+      #Elasticsearch
+    data:
+      mongodb:
+        database: mymongodb
+        host:
+        port:
+        repositories:
+          enable: true
+        username:
+        password:
+
+#  data:
+#    elasticsearch:
+#      cluster-nodes: localhost:9200
+#      cluster-name: my-application
+#  redis:
+#    base:
+#      host: 192.168.0.105
+#      port: 6379
+#      password: 123456
+#      database: 10
+#      timeout: 100000
+#      maxTotal: 10000
+#      maxIdle: 1000
+#      minIdle: 30
+#      maxWaitMillis: 1000
+
+
+#mybatis配置
+mybatis:
+  configLocation: classpath:datasources/mybatis/config/mybatis-config.xml
+  mapperLocations:  classpath:datasources/mybatis/mapper/*.xml

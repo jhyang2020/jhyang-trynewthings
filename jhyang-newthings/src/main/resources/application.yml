@@ -1,0 +1,32 @@
+#配置切换
+spring:
+  profiles:
+    active: dev
+
+#端口和path
+server:
+  port: 8008
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /jhyang
+
+# 分页插件配置
+pagehelper:
+  helper-dialect: oracle
+  reasonable: false
+  support-methods-arguments: true
+  params: count
+
+##日志
+logging:
+  config: classpath:logback-spring.xml
+
+#接口文档输出
+swagger:
+  production: false
+  basic:
+    enable: true
+    username: admin
+    password: 123456
+

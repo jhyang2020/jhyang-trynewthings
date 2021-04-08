@@ -1,7 +1,7 @@
-package com.example.jhyangnewthings.userlog.controller;
+package com.example.jhyangnewthings.api.userlog.controller;
 
 import com.example.jhyangnewthings.common.bean.Response;
-import com.example.jhyangnewthings.userlog.service.LogService;
+import com.example.jhyangnewthings.api.userlog.service.LogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

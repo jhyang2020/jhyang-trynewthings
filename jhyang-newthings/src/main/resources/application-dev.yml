@@ -5,7 +5,7 @@ spring:
     #postgreSql数据源配置
     logpgdatasource:
       platform: postgres
-      url: jdbc:postgresql://localhost:5432/postgres
+      url: jdbc:postgresql://192.168.244.128:5432/postgres
       username: postgres
       password: 123456
       driver-class-name: org.postgresql.Driver
@@ -47,4 +47,4 @@ spring:
 #mybatis配置
 mybatis:
   configLocation: classpath:datasources/mybatis/config/mybatis-config.xml
-  mapperLocations:  classpath:datasources/mybatis/mapper/*.xml
+  mapperLocations: classpath:datasources/mybatis/mapper/*.xml

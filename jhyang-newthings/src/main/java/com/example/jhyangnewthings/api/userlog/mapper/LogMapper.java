@@ -1,6 +1,5 @@
-package com.example.jhyangnewthings.userlog.mapper;
+package com.example.jhyangnewthings.api.userlog.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -11,7 +10,7 @@ import java.util.Map;
  * @Description
  * @Date 2020/3/27
  */
-@Mapper
+
 @Repository
 public interface LogMapper {
 

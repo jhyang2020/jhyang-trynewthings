@@ -1,4 +1,4 @@
-package com.example.jhyangnewthings.userlog.controller;
+package com.example.jhyangnewthings.api.userlog.controller;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

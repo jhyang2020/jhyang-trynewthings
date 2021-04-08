@@ -1,4 +1,4 @@
-package com.example.jhyangnewthings.userlog.dao;
+package com.example.jhyangnewthings.api.userlog.dao;
 
 /**
  * @author jhYang

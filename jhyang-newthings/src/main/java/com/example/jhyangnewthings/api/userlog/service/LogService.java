@@ -20,7 +20,7 @@ public class LogService {
     @Autowired
     private LogMapper logMapper;
 
-    @TargetDatasource(LOG_PG_DATA_SOURCE)
+    @TargetDatasource()
     public List<Map<String, Object>> getTotalNumOfLog() {
         List<Map<String, Object>> list = logMapper.getTotalNumOfLogMapper();
         return list;

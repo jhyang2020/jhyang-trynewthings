@@ -37,8 +37,9 @@ public class LogController {
     @PostMapping("/getTotalNumOfLog")
     public Response test(String user) {
         try {
+
+            System.out.println(user);
             List<Map<String, Object>> totalNumOfLog = logService.getTotalNumOfLog();
-            String sss ="";
             return Response.ok(totalNumOfLog);
         } catch (Exception e) {
             return Response.ok("测试出错...");

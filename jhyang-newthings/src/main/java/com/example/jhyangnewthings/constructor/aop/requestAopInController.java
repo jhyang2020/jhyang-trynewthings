@@ -18,13 +18,13 @@ import org.springframework.stereotype.Component;
  * @Date 2020/3/28
  */
 
-@Aspect
+//@Aspect
 @EnableAspectJAutoProxy(exposeProxy = true, proxyTargetClass = true)
 @Component
 public class requestAopInController {
     private static Logger log = LoggerFactory.getLogger(requestAopInController.class);
 
-    @Pointcut("execution(* com.fiberhome.uqbing.userlog..*(..))")
+    @Pointcut("execution(* com.example.jhyangnewthings.api..*(..))")
     public void PointCut() {
     }
 

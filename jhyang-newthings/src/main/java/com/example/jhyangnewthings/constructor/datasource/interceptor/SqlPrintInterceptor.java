@@ -45,12 +45,10 @@ public class SqlPrintInterceptor implements Interceptor {
         try {
             result = invocation.proceed();
         } catch (InvocationTargetException e) {
-//            e.printStackTrace();
-            logger.error(e.getMessage());
-//            e.printStackTrace();
+            e.printStackTrace();
+            e.printStackTrace();
         } catch (IllegalAccessException e) {
-//            e.printStackTrace();
-            logger.error(e.getMessage());
+            e.printStackTrace();
         }
 
         String statementId = mappedStatement.getId();

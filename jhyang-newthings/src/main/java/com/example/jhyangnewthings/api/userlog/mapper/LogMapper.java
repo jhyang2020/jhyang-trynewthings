@@ -14,6 +14,10 @@ import java.util.Map;
 @Repository
 public interface LogMapper {
 
+    /**
+     * 获取总数
+     * @return
+     */
     List<Map<String, Object>> getTotalNumOfLogMapper();
 
 }

@@ -1,7 +1,6 @@
 package com.example.jhyangnewthings.api.mq;
 
-import com.example.jhyangnewthings.api.mq.consumer.MsgReceiver;
-import com.example.jhyangnewthings.api.mq.producer.MsgProducer;
+import com.example.jhyangnewthings.api.mq.producer.OrderService;
 import com.example.jhyangnewthings.common.bean.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -18,13 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/mq")
-@Api(value = "消息队列服务")
+@Api(value = "生产服务")
 public class MqController {
 
     @Autowired
-    private MsgProducer msgProducer;
-    @Autowired
-    private MsgReceiver msgReceiver;
+    private OrderService orderService;
 
     /**
      * @param str
@@ -35,20 +32,35 @@ public class MqController {
     })
     @PostMapping("/testMqProduct")
     public Response testMqProduct(String str){
-        msgProducer.sendMsg(str);
+        orderService.makeOrder(str,"14","14");
         return Response.ok("testMqProduct！");
     }
 
-    /**
-     * @param str
-     * @return
-     */
     @ApiImplicitParams({
             @ApiImplicitParam(name = "str", value = "关键词", dataType = "String", required = true)
     })
-    @PostMapping("/testMqConsumer")
-    public Response testMqConsumer(String str){
-        msgReceiver.processA(str);
-        return Response.ok("testMqConsumer!");
+    @PostMapping("/testMqProductDirect")
+    public Response testMqProductDirect(String str){
+        orderService.makeOrderDirect(str,"14","14");
+        return Response.ok("testMqProductDirect！");
     }
+
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "str", value = "关键词", dataType = "String", required = true)
+    })
+    @PostMapping("/testMqProductDirectTtl")
+    public Response testMqProductDirectTtl(String str){
+        orderService.makeOrderDirecttTtl(str,"14","14");
+        return Response.ok("test makeOrderDirecttTtl！");
+    }
+
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "str", value = "关键词", dataType = "String", required = true)
+    })
+    @PostMapping("/testMqProductTopic")
+    public Response testMqProductTopic(String str){
+        orderService.makeOrderTopic(str,"14","14");
+        return Response.ok("testMqProductDirect！");
+    }
+
 }

@@ -1,5 +1,8 @@
 package com.example.jhyangnewthings.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.*;
 
 /**
@@ -8,6 +11,7 @@ import java.io.*;
  */
 public class FileUtils {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileUtils.class);
     /**
      * 按行读取文件(字符)
      *
@@ -16,35 +20,26 @@ public class FileUtils {
     public static void ReadFileByLine(String filename) {
 
         File file = new File(filename);
-        InputStream is = null;
-        Reader reader = null;
-        BufferedReader bufferedReader = null;
-        try {
-            is = new FileInputStream(file);
-            reader = new InputStreamReader(is);
-            bufferedReader = new BufferedReader(reader);
+
+        try(
+                InputStream is = new FileInputStream(file);
+                Reader reader = new InputStreamReader(is);
+                BufferedReader bufferedReader = new BufferedReader(reader)
+        ) {
+
             String line = null;
             while ((line = bufferedReader.readLine()) != null) {
                 System.out.println(line);
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            LOGGER.error("【文件不存在...】",e);
         } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (null != bufferedReader)
-                    bufferedReader.close();
-                if (null != reader)
-                    reader.close();
-                if (null != is)
-                    is.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            LOGGER.error("【IO异常...】",e);
         }
     }
+
+
 
     /**
      * 按字节读取文件
@@ -94,8 +89,9 @@ public class FileUtils {
             e.printStackTrace();
         } finally {
             try {
-                if (null != is)
+                if (null != is) {
                     is.close();
+                }
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -129,10 +125,12 @@ public class FileUtils {
             e.printStackTrace();
         } finally {
             try {
-                if (null != is)
+                if (null != is) {
                     is.close();
-                if (null != isr)
+                }
+                if (null != isr) {
                     isr.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

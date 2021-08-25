@@ -1,4 +1,4 @@
-package com.example.jhyangnewthings.common.utils;
+package com.example.jhyangnewthings.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

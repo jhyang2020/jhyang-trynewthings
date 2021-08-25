@@ -1,4 +1,4 @@
-package com.example.jhyangnewthings.common.utils;
+package com.example.jhyangnewthings.utils;
 
 import org.apache.commons.lang3.StringUtils;
 import java.sql.Timestamp;

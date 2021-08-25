@@ -1,4 +1,4 @@
-package com.example.jhyangnewthings.common.utils;
+package com.example.jhyangnewthings.utils;
 
 import com.google.common.collect.Maps;
 

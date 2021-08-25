@@ -1,5 +1,5 @@
 package com.example.jhyangnewthings.constructor.datasource.rootdatasource;
-import com.example.jhyangnewthings.common.utils.SpringContextUtil;
+import com.example.jhyangnewthings.utils.SpringContextUtil;
 import com.example.jhyangnewthings.constructor.datasource.constant.DatasourceConstant;
 import com.example.jhyangnewthings.constructor.datasource.interceptor.SqlPrintInterceptor;
 import com.github.pagehelper.PageHelper;

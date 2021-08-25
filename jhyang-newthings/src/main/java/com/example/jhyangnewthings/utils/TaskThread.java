@@ -16,8 +16,6 @@ public class TaskThread implements Callable<String>{
 
     @Override
     public String call() throws Exception {
-
-
         return "线程"+data+"执行结果";
     }
 }

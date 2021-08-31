@@ -1,0 +1,119 @@
+2021-06-17 22:12:59 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 14316 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-06-17 22:12:59 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-06-17 22:13:02 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-06-17 22:13:03 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-06-17 22:13:03 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-17 22:13:03 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-17 22:13:04 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-17 22:13:05 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-06-17 22:13:05 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5877 ms
+2021-06-17 22:13:07 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-06-17 22:13:07 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-06-17 22:13:07 - [main] INFO  c.e.j.c.d.r.MyBatisAndDataSourceConfiguration ---------------------  sqlSessionFactory init ---------------------
+2021-06-17 22:13:08 - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-17 22:13:08 - [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-17 22:13:09 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:13:09 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8008 (http) with context path '/jhyang'
+2021-06-17 22:13:09 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2021-06-17 22:13:09 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2021-06-17 22:13:09 - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2021-06-17 22:13:09 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [192.168.244.129:5672]
+2021-06-17 22:13:10 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#38a4e2b0:0/SimpleConnection@6b6fd0 [delegate=amqp://admin@192.168.244.129:5672/, localPort= 64606]
+2021-06-17 22:13:10 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Started JhyangNewthingsApplication in 12.426 seconds (JVM running for 20.44)
+2021-06-17 22:13:21 - [http-nio-8008-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-17 22:13:21 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2021-06-17 22:13:21 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 19 ms
+2021-06-17 22:13:40 - [http-nio-8008-exec-10] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功sss
+2021-06-17 22:13:40 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.direct.DirectDuanxinConsumer -接收到了短信消息：1b019c45-b61c-4b20-80ee-f3d5a593e51b
+2021-06-17 22:13:54 - [http-nio-8008-exec-9] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功sss
+2021-06-17 22:13:56 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.direct.DirectDuanxinConsumer -接收到了短信消息：f6ca0dce-00b8-4f2a-9a44-2bfba5c89952
+2021-06-17 22:14:56 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:56 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:14:56 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:57 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:14:57 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:58 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:14:58 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:58 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:14:58 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:59 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:14:59 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:14:59 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Successfully waited for workers to finish.
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Shutdown ignored - container is not active already
+2021-06-17 22:15:00 - [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-17 22:15:09 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 1768 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-06-17 22:15:09 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-06-17 22:15:10 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-06-17 22:15:11 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-06-17 22:15:11 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-17 22:15:11 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-17 22:15:12 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-17 22:15:13 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-06-17 22:15:13 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3686 ms
+2021-06-17 22:15:14 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-06-17 22:15:14 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-06-17 22:15:14 - [main] INFO  c.e.j.c.d.r.MyBatisAndDataSourceConfiguration ---------------------  sqlSessionFactory init ---------------------
+2021-06-17 22:15:15 - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-17 22:15:15 - [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-17 22:15:16 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:15:16 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8008 (http) with context path '/jhyang'
+2021-06-17 22:15:16 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2021-06-17 22:15:16 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2021-06-17 22:15:16 - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2021-06-17 22:15:16 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [192.168.244.129:5672]
+2021-06-17 22:15:16 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#59096b66:0/SimpleConnection@1b28cff [delegate=amqp://admin@192.168.244.129:5672/, localPort= 64714]
+2021-06-17 22:15:16 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Started JhyangNewthingsApplication in 8.944 seconds (JVM running for 11.124)
+2021-06-17 22:15:21 - [http-nio-8008-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-17 22:15:21 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2021-06-17 22:15:21 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 20 ms
+2021-06-17 22:15:28 - [http-nio-8008-exec-7] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功sss
+2021-06-17 22:15:30 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.direct.DirectDuanxinConsumer -接收到了短信消息：89913c64-3a80-4b84-81b5-da53f907d932
+2021-06-17 22:15:40 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-17 22:17:54 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 5180 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-06-17 22:17:54 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-06-17 22:17:56 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-06-17 22:17:57 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-06-17 22:17:57 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-17 22:17:57 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-17 22:17:58 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-17 22:17:58 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-06-17 22:17:58 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4084 ms
+2021-06-17 22:17:59 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-06-17 22:17:59 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-06-17 22:17:59 - [main] INFO  c.e.j.c.d.r.MyBatisAndDataSourceConfiguration ---------------------  sqlSessionFactory init ---------------------
+2021-06-17 22:18:00 - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-17 22:18:00 - [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-17 22:18:01 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8008"]
+2021-06-17 22:18:01 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8008 (http) with context path '/jhyang'
+2021-06-17 22:18:01 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2021-06-17 22:18:01 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2021-06-17 22:18:01 - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2021-06-17 22:18:01 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [192.168.244.129:5672]
+2021-06-17 22:18:02 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#6f731759:0/SimpleConnection@18e8eb59 [delegate=amqp://admin@192.168.244.129:5672/, localPort= 64864]
+2021-06-17 22:18:02 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Started JhyangNewthingsApplication in 9.049 seconds (JVM running for 11.112)
+2021-06-17 22:18:09 - [http-nio-8008-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-17 22:18:09 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2021-06-17 22:18:09 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 14 ms
+2021-06-17 22:18:09 - [http-nio-8008-exec-1] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功sss
+2021-06-17 22:18:11 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.direct.DirectDuanxinConsumer -接收到了短信消息：5e8bd06e-ce34-4728-85cd-0fb624396939
+2021-06-17 22:57:56 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.

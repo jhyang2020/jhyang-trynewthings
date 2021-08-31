@@ -1,0 +1,39 @@
+2021-04-02 22:55:35 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 12004 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-04-02 22:55:35 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-04-02 22:55:36 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-04-02 22:55:37 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-04-02 22:55:37 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-04-02 22:55:37 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-04-02 22:55:38 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-04-02 22:55:38 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-04-02 22:55:38 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3479 ms
+2021-04-02 22:55:38 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-04-02 22:55:39 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-04-02 22:55:39 - [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logController': Unsatisfied dependency expressed through field 'logService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'logService': Unsatisfied dependency expressed through field 'logMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.jhyangnewthings.userlog.mapper.LogMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-04-02 22:55:39 - [main] INFO  org.apache.catalina.core.StandardService -Stopping service [Tomcat]
+2021-04-02 22:55:39 - [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-02 22:55:39 - [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field logMapper in com.example.jhyangnewthings.userlog.service.LogService required a bean of type 'com.example.jhyangnewthings.userlog.mapper.LogMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.jhyangnewthings.userlog.mapper.LogMapper' in your configuration.
+

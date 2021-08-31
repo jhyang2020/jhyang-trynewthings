@@ -1,0 +1,93 @@
+2021-06-12 14:17:12 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 10304 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-06-12 14:17:12 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-06-12 14:17:14 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-06-12 14:17:15 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-06-12 14:17:15 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-12 14:17:15 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-12 14:17:16 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-12 14:17:16 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-06-12 14:17:16 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4228 ms
+2021-06-12 14:17:18 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-06-12 14:17:18 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-06-12 14:17:18 - [main] INFO  c.e.j.c.d.r.MyBatisAndDataSourceConfiguration ---------------------  sqlSessionFactory init ---------------------
+2021-06-12 14:17:19 - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-12 14:17:20 - [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-12 14:17:21 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8008"]
+2021-06-12 14:17:21 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8008 (http) with context path '/jhyang'
+2021-06-12 14:17:21 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2021-06-12 14:17:22 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2021-06-12 14:17:22 - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2021-06-12 14:17:22 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [192.168.244.129:5672]
+2021-06-12 14:17:23 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#74c9e11:0/SimpleConnection@2b6b487c [delegate=amqp://admin@192.168.244.129:5672/, localPort= 50907]
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：eb1c0894-afac-4a64-8a2a-47101cc9a4df
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：c056a008-b25c-4615-8718-8190f599fdad
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：7e163096-e2a1-4e3b-8f6f-2b52919a38e6
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：ff66188a-9574-4663-ab57-4d6d54f47db7
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：c06260a7-a098-41f8-ad47-faa5da6326ee
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：5e385500-35b7-4130-94ab-78a234223db9
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：d1f8ac1a-d44b-438c-a1a5-40f14e04f443
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：28678c29-3673-4fbf-a2f6-777270d55f88
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：dacee561-100c-4660-abc9-cd6513dc2373
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：7fc5dc7f-52a7-4a42-9393-feaef0a4db94
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：60283cee-8dad-462e-a4b1-3cbb851c5a88
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：68684eea-a2ea-4e38-b257-6595ded0e2fe
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：eb1c0894-afac-4a64-8a2a-47101cc9a4df
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：c056a008-b25c-4615-8718-8190f599fdad
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：7e163096-e2a1-4e3b-8f6f-2b52919a38e6
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：ff66188a-9574-4663-ab57-4d6d54f47db7
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：c06260a7-a098-41f8-ad47-faa5da6326ee
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：5e385500-35b7-4130-94ab-78a234223db9
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：d1f8ac1a-d44b-438c-a1a5-40f14e04f443
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：28678c29-3673-4fbf-a2f6-777270d55f88
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：dacee561-100c-4660-abc9-cd6513dc2373
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：7fc5dc7f-52a7-4a42-9393-feaef0a4db94
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：60283cee-8dad-462e-a4b1-3cbb851c5a88
+2021-06-12 14:17:23 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：68684eea-a2ea-4e38-b257-6595ded0e2fe
+2021-06-12 14:17:23 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Started JhyangNewthingsApplication in 11.908 seconds (JVM running for 14.229)
+2021-06-12 14:18:13 - [http-nio-8008-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-12 14:18:13 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2021-06-12 14:18:13 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 63 ms
+2021-06-12 14:18:31 - [http-nio-8008-exec-1] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功aaaaaa
+2021-06-12 14:18:31 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinCnsumer -接收到了短信消息：8240ea4f-606d-4a3f-823a-69a54d9da25d
+2021-06-12 14:18:31 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：8240ea4f-606d-4a3f-823a-69a54d9da25d
+2021-06-12 14:19:39 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.
+2021-06-12 14:20:53 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Starting JhyangNewthingsApplication on PC-201906211242 with PID 7744 (E:\my_projects\learn\jhyang-trynewthings\jhyang-newthings\target\classes started by Administrator in E:\my_projects\learn\jhyang-trynewthings)
+2021-06-12 14:20:53 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -The following profiles are active: dev
+2021-06-12 14:20:55 - [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.fiberhome.uqbing.*]' package. Please check your configuration.
+2021-06-12 14:20:55 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8008 (http)
+2021-06-12 14:20:55 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8008"]
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.StandardService -Starting service [Tomcat]
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.38]
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-12 14:20:55 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-12 14:20:57 - [main] INFO  org.apache.catalina.core.AprLifecycleListener -OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-12 14:20:57 - [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring embedded WebApplicationContext
+2021-06-12 14:20:57 - [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3593 ms
+2021-06-12 14:20:58 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig -----------------------messagePushDataSource init ----------------------
+2021-06-12 14:20:58 - [main] INFO  c.e.j.c.datasource.rootdatasource.DataSourceConfig ----------------------logPgDataSource init ----------------------
+2021-06-12 14:20:58 - [main] INFO  c.e.j.c.d.r.MyBatisAndDataSourceConfiguration ---------------------  sqlSessionFactory init ---------------------
+2021-06-12 14:20:59 - [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-12 14:20:59 - [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-12 14:20:59 - [main] INFO  org.apache.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8008"]
+2021-06-12 14:20:59 - [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -Tomcat started on port(s): 8008 (http) with context path '/jhyang'
+2021-06-12 14:20:59 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Context refreshed
+2021-06-12 14:20:59 - [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+2021-06-12 14:21:00 - [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner -Scanning for api listing references
+2021-06-12 14:21:00 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Attempting to connect to: [192.168.244.129:5672]
+2021-06-12 14:21:00 - [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -Created new connection: rabbitConnectionFactory#7f3fc42f:0/SimpleConnection@2e0516a3 [delegate=amqp://admin@192.168.244.129:5672/, localPort= 51024]
+2021-06-12 14:21:00 - [main] INFO  c.e.jhyangnewthings.JhyangNewthingsApplication -Started JhyangNewthingsApplication in 8.686 seconds (JVM running for 10.42)
+2021-06-12 14:21:31 - [http-nio-8008-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/jhyang] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-12 14:21:31 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+2021-06-12 14:21:31 - [http-nio-8008-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -Completed initialization in 13 ms
+2021-06-12 14:21:49 - [http-nio-8008-exec-7] INFO  c.e.jhyangnewthings.api.mq.producer.OrderService -订单生成成功aaaaaa
+2021-06-12 14:21:49 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutSmsConsumer -接收到了sms消息：332fa652-d281-40f2-be51-9c69006bcea0
+2021-06-12 14:21:49 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutDuanxinConsumer -接收到了短信消息：332fa652-d281-40f2-be51-9c69006bcea0
+2021-06-12 14:21:49 - [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  c.e.j.api.mq.consumer.fanout.FanoutEmailConsumer -接收到了邮件消息：332fa652-d281-40f2-be51-9c69006bcea0
+2021-06-12 15:03:52 - [SpringContextShutdownHook] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -Waiting for workers to finish.

@@ -6,4 +6,8 @@ package com.example.jhyangnewthings.test;
  * @Discription todo
  */
 public class Test {
+
+
+    private String hhh = "";
+
 }
